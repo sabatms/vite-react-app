@@ -1,13 +1,20 @@
-import Test from "./Test.jsx"
+import Header from "./Header.jsx"
+import CourseList from "./CourseList.jsx"
+import Banner from "./Banner.jsx"
+import Counter from "./Counter.jsx"
+import Form from "./Form.jsx"
 
 function App() {
   return (
     <div>
-     <h1>Booto start</h1>
-     <p>React Course</p>
-     <p>{ 4 * 5}</p>
-     <h2>{ 200 ^ 3}</h2>
-     <Test />
+      <Form /> 
+      {/* <Counter />
+    <Header />
+     <Banner
+     title = "BootoStart"
+     description = "This is a programing web "
+     numOfstudent = {5000}/>
+     <CourseList /> */}
     </div>
    )
 }
