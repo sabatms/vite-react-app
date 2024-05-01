@@ -20,12 +20,14 @@ function Form() {
       }
     }
 
-    const loginHandler = () => {
+    const submitHandler = (event) => {
+      event.preventDefault();
       console.log(form);
     };
     
   return (
     <div>
+      <form onSubmit={submitHandler}>
       <input 
       type="Email" 
       placeholder="Email" 
@@ -79,7 +81,8 @@ function Form() {
       />
         
       <input type="checkbox" checked={form.rules} name="rules" onChange={changeHandler} />
-      <button onClick={loginHandler}>Login</button>
+      <button type="submit">Login</button>
+      </form>
     </div>
   )
 }
